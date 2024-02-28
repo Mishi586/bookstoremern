@@ -20,6 +20,7 @@ const ShowBook = () => {
     })
     .catch((error)=>{
       console.log(error);
+      console.log("error in axios:")
       setLoading(false);
     });
 

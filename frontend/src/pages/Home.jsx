@@ -21,6 +21,7 @@ const Home = () => {
                 setLoading(false);
             })
             .catch((error) => {
+                console.log('error in axios:');
                 console.log(error);
                 setLoading(false);
             });
