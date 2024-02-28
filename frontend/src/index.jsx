@@ -1,18 +1,16 @@
-// Import necessary dependencies
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App.jsx';
-import './index.css';
-import { BrowserRouter } from 'react-router-dom';
-import { SnackbarProvider } from 'notistack';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import './index.css'
+import {BrowserRouter} from 'react-router-dom'
+import {SnackbarProvider} from 'notistack';
 
-// Render the app using ReactDOM.render
-ReactDOM.render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <SnackbarProvider>
-      <App />
-    </SnackbarProvider>
-  </BrowserRouter>,
-  document.getElementById('root')
-);
+  <SnackbarProvider>
+  <App />
 
+  </SnackbarProvider>
+    
+  </BrowserRouter>
+)
