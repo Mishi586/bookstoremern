@@ -17,6 +17,7 @@ const Home = () => {
         axios
             .get("http://localhost:5000/books/books")
             .then((response) => {
+                console.log(response.data);
                 setBooks(response.data.data);
                 setLoading(false);
             })
